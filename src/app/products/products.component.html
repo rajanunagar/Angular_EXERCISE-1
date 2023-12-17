@@ -1,0 +1,26 @@
+<div class="table-responsive my-3 mx-5"> 
+    <table class="table table-stripped table-bordered">
+        <thead>
+            <tr>
+                <th>Product-id</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Stock</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+    
+            <tr *ngFor="let ele of products ">
+                <td>{{ele.id}}</td>
+                <td>{{ele.name}}</td>
+                <td>{{ele.price}}</td>
+                <td>{{ele.category}}</td>
+                <td>{{ele.stock}}</td>
+                <td><button class="btn btn-primary" (click)="onClick(ele)">view detail</button></td>
+            </tr>
+                    
+        </tbody>
+    </table>
+    </div>

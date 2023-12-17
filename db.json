@@ -1,0 +1,56 @@
+{
+
+    "cities" : [
+        { "id": 1, "name": "New York", "country": "USA", "population": 8419600, "timezone": "America/New_York" },
+        { "id": 2, "name": "Tokyo", "country": "Japan", "population": 13929286,"timezone": "Asia/Tokyo" },
+        { "id": 3, "name": "London", "country": "UK", "population": 8982256, "timezone": "Europe/London" },
+        { "id": 4, "name": "Paris", "country": "France", "population": 2140526, "timezone": "Europe/Paris" },
+        { "id": 5, "name": "Beijing", "country": "China", "population": 21542000,"timezone": "Asia/Shanghai" },
+        { "id": 6, "name": "Rio de Janeiro", "country": "Brazil", "population": 6718903, "timezone": "America/Sao_Paulo" },
+        { "id": 7, "name": "Cairo", "country": "Egypt", "population": 9756354, "timezone": "Africa/Cairo" },
+        { "id": 8, "name": "Moscow", "country": "Russia", "population": 12616824,"timezone": "Europe/Moscow" },
+        { "id": 9, "name": "Toronto", "country": "Canada", "population": 2731571, "timezone": "America/Toronto" },
+        { "id": 10, "name": "Sydney", "country": "Australia", "population": 5312163, "timezone": "Australia/Sydney" },
+        { "id": 11, "name": "Mumbai", "country": "India", "population": 12691836,"timezone": "Asia/Kolkata" },
+        { "id": 12, "name": "Dubai", "country": "UAE", "population": 3133324, "timezone": "Asia/Dubai" },
+        { "id": 13, "name": "Berlin", "country": "Germany", "population": 3644826, "timezone": "Europe/Berlin" },
+        { "id": 14, "name": "Seoul", "country": "South Korea", "population": 9720846, "timezone": "Asia/Seoul" },
+        { "id": 15, "name": "Mexico City", "country": "Mexico", "population": 8874724, "timezone": "America/Mexico_City" }
+      ],
+    "users" : [
+        { "id": 1, "name": "John Doe", "email": "john.doe@example.com", "age": 25, "city": "New York" },
+        { "id": 2, "name": "Alice Smith", "email": "alice.smith@example.com", "age": 30, "city": "London" },
+        { "id": 3, "name": "Bob Johnson", "email": "bob.johnson@example.com", "age": 28, "city": "Tokyo" },
+        { "id": 4, "name": "Emma Davis", "email": "emma.davis@example.com", "age": 22, "city": "Paris" },
+        { "id": 5, "name": "Michael Brown", "email": "michael.brown@example.com", "age": 35, "city": "Sydney" },
+        { "id": 6, "name": "Olivia Wilson", "email": "olivia.wilson@example.com", "age": 27, "city": "Berlin" },
+        { "id": 7, "name": "Daniel Lee", "email": "daniel.lee@example.com", "age": 32, "city": "Toronto" },
+        { "id": 8, "name": "Sophia Kim", "email": "sophia.kim@example.com", "age": 29, "city": "Seoul" },
+        { "id": 9, "name": "Matthew Jones", "email": "matthew.jones@example.com", "age": 26, "city": "Mexico City" },
+        { "id": 10, "name": "Ava Martinez", "email": "ava.martinez@example.com", "age": 31, "city": "Rio de Janeiro" },
+        { "id": 11, "name": "Ethan Anderson", "email": "ethan.anderson@example.com", "age": 23, "city": "Cairo" },
+        { "id": 12, "name": "Isabella Nguyen", "email": "isabella.nguyen@example.com", "age": 33, "city": "Moscow" },
+        { "id": 13, "name": "William Garcia", "email": "william.garcia@example.com", "age": 28, "city": "Dubai" },
+        { "id": 14, "name": "Mia Hernandez", "email": "mia.hernandez@example.com", "age": 24, "city": "Mumbai" },
+        { "id": 15, "name": "Liam Brown", "email": "liam.brown@example.com", "age": 30, "city": "Beijing" }
+      ],
+    "products": [
+        { "id": 1, "name": "Laptop", "price": 999.99, "category": "Electronics", "stock": 50 },
+        { "id": 2, "name": "Smartphone", "price": 499.99, "category": "Electronics", "stock": 100 },
+        { "id": 3, "name": "Headphones", "price": 79.99, "category": "Electronics", "stock": 200 },
+        { "id": 4, "name": "Running Shoes", "price": 59.99, "category": "Fashion", "stock": 150 },
+        { "id": 5, "name": "Backpack", "price": 39.99, "category": "Fashion", "stock": 120 },
+        { "id": 6, "name": "Coffee Maker", "price": 129.99, "category": "Appliances", "stock": 30 },
+        { "id": 7, "name": "Gaming Console", "price": 299.99, "category": "Electronics", "stock": 80 },
+        { "id": 8, "name": "Desk Chair", "price": 149.99, "category": "Furniture", "stock": 40 },
+        { "id": 9, "name": "Watch", "price": 199.99, "category": "Fashion", "stock": 60 },
+        { "id": 10, "name": "Sunglasses", "price": 29.99, "category": "Fashion", "stock": 100 },
+        { "id": 11, "name": "Fitness Tracker", "price": 79.99, "category": "Electronics", "stock": 70 },
+        { "id": 12, "name": "Blender", "price": 49.99, "category": "Appliances", "stock": 25 },
+        { "id": 13, "name": "Bookshelf", "price": 89.99, "category": "Furniture", "stock": 35 },
+        { "id": 14, "name": "Outdoor Grill", "price": 199.99, "category": "Appliances", "stock": 15 },
+        { "id": 15, "name": "Winter Jacket", "price": 129.99, "category": "Fashion", "stock": 50 }
+      ]
+
+
+}

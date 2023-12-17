@@ -1,0 +1,26 @@
+<div class="table-responsive my-3 mx-5"> 
+    <table class="table table-stripped table-bordered">
+        <thead>
+            <tr>
+                <th>User-id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>City</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+    
+            <tr *ngFor="let ele of users ">
+                <td>{{ele.id}}</td>
+                <td>{{ele.name}}</td>
+                <td>{{ele.email}}</td>
+                <td>{{ele.age}}</td>
+                <td>{{ele.city}}</td>
+                <td><button class="btn btn-primary"  (click)="onClick(ele)">view detail</button></td>
+            </tr>
+                    
+        </tbody>
+    </table>
+    </div>

@@ -1,0 +1,26 @@
+<div class="table-responsive my-3 mx-5"> 
+<table class="table table-stripped table-bordered">
+    <thead>
+        <tr>
+            <th>City-id</th>
+            <th>Name</th>
+            <th>Country</th>
+            <th>Population</th>
+            <th>Timezone</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr *ngFor="let ele of cities ">
+            <td>{{ele.id}}</td>
+            <td>{{ele.name}}</td>
+            <td>{{ele.country}}</td>
+            <td>{{ele.population}}</td>
+            <td>{{ele.timezone}}</td>
+            <td><button class="btn btn-primary" (click)="onClick(ele)">view detail</button></td>
+        </tr>
+                
+    </tbody>
+</table>
+</div>
