@@ -1,2 +1,47 @@
-<p>user works!</p>
-<h1 *ngIf="userData">{{userData.name}}</h1>
+
+<div class="container my-4  ">
+    <div class="row">
+        <h1  class="text-center">User Detail</h1>
+    </div>
+    <form class="row g-3  border rounded-2 my-2 " (ngSubmit)="onformSubmitted()" #registrationForm="ngForm">
+        <div class="container my-3">
+        <div class="row justify-content-between">
+        <div class="col-md-3 ">
+          <label  class="form-label">User-id </label>
+          <input type="number" class="form-control"  name="userid" ngModel required  #inputid="ngModel">
+          <small  *ngIf="inputid.invalid && inputid.touched">*User-id is a required field</small>
+        </div>
+        
+        <div class="col-md-3">
+          <label  class="form-label">Name</label>
+          <input type="text" class="form-control"   name="name" ngModel required #inputname="ngModel">
+          <small  *ngIf="inputname.invalid && inputname.touched">*Name is a required field</small>
+        </div>
+        
+        <div class="col-md-3 ">
+            <label  class="form-label">age</label>
+            <input type="number" class="form-control"   name="age" ngModel required #inputage="ngModel">
+            <small  *ngIf="inputage.invalid && inputage.touched">*User-Age is a required field</small>
+        </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <label  class="form-label">Email</label>
+            <input type="email" class="form-control"   name="email" ngModel required email #inputemail="ngModel">
+            <small  *ngIf="inputemail.invalid && inputemail.touched">*User-Email is a required field</small>
+        </div>
+        <div class="col-md-5">
+            <label  class="form-label">city</label>
+            <input type="text" class="form-control"  name="city" ngModel required #inputcity="ngModel">
+            <small  *ngIf="inputcity.invalid && inputcity.touched">*User-City is a required field</small>
+        </div>
+    
+    </div> 
+        <div class="col-12 text-center my-4">
+          <button class="btn btn-primary " type="submit"  [disabled]="registrationForm.invalid" >Submit form</button>
+        </div>
+      </form>
+</div>
+
+
