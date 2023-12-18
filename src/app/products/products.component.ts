@@ -7,27 +7,33 @@ import { ActivatedRoute, Router } from '@angular/router';
   selector: 'app-products',
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.css'],
-  providers:[ProductService]
+  providers: [ProductService]
 })
 export class ProductsComponent {
 
-  products! : Product[];
- 
+  products!: Product[];
 
 
 
-  constructor(private cityService: ProductService,private router: Router,private route: ActivatedRoute) {
-    this.cityService.getProducts().then((products : Product[])=>{
+
+  constructor(private cityService: ProductService, private router: Router, private route: ActivatedRoute) {
+    this.cityService.getProducts().then((products: Product[]) => {
       this.products = products;
       console.log(products);
     })
 
   }
 
-  onClick(product:Product){
-     
+  onClick(product: Product) {
+
     this.router.navigate([product.id], { relativeTo: this.route });
 
+  }
+
+  searchText: string = '';
+  onChange(searchText: string) {
+    console.log(searchText);
+    this.searchText = searchText;
   }
 
 }

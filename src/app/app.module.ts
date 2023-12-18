@@ -12,7 +12,8 @@ import { UserComponent } from './users/user/user.component';
 import { ProductComponent } from './products/product/product.component';
 import { CityComponent } from './cities/city/city.component';
 import { FooterComponent } from './footer/footer.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SearchComponent } from './search/search.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,12 +25,14 @@ import { FormsModule } from '@angular/forms';
     UserComponent,
     ProductComponent,
     CityComponent,
-    FooterComponent
+    FooterComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

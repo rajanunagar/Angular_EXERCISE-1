@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder,FormGroup,Validator, Validators } from '@angular/forms';
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
+ 
 }

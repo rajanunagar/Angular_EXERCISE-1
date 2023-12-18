@@ -27,4 +27,12 @@ export class CitiesComponent {
 
   }
   
+
+
+  searchText:string='';
+  onChange(searchText:string){
+    console.log(searchText);
+    this.searchText=searchText;
+  }
+
 }

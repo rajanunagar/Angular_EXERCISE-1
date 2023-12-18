@@ -1,3 +1,6 @@
+<app-search (onchangedEmit)="onChange($event)"></app-search>
+
+
 <div class="table-responsive my-3 mx-5"> 
 <table class="table table-stripped table-bordered">
     <thead>
@@ -12,15 +15,17 @@
     </thead>
     <tbody>
 
-        <tr *ngFor="let ele of cities ">
+        <ng-container *ngFor="let ele of cities">
+            <tr *ngIf="ele.name.toLowerCase().indexOf(searchText.toLowerCase()) !== -1">
             <td>{{ele.id}}</td>
             <td>{{ele.name}}</td>
             <td>{{ele.country}}</td>
             <td>{{ele.population}}</td>
             <td>{{ele.timezone}}</td>
-            <td><button class="btn btn-primary" (click)="onClick(ele)">view detail</button></td>
+            <td><div class="text-center"><button class="btn btn-primary" (click)="onClick(ele)">detail</button></div></td>
         </tr>
-                
+        </ng-container>
+               
     </tbody>
 </table>
 </div>

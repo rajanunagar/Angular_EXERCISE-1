@@ -22,6 +22,9 @@ export class CityComponent {
         });
         this.cityService.getCityById(this.cityId).then((cityData?:City)=>{
            this.cityData=cityData;
+
+
+           
           //  console.log(this.cityData);
           this.form.setValue({
             cityid: this.cityData?.id,

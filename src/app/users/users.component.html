@@ -1,4 +1,11 @@
-<div class="table-responsive my-3 mx-5"> 
+<app-search (onchangedEmit)="onChange($event)"></app-search>
+<h1>{{ searchText }}</h1>
+
+
+<ng-template>
+
+</ng-template>
+<div class="table-responsive my-3 mx-5">
     <table class="table table-stripped table-bordered">
         <thead>
             <tr>
@@ -11,16 +18,18 @@
             </tr>
         </thead>
         <tbody>
-    
-            <tr *ngFor="let ele of users ">
-                <td>{{ele.id}}</td>
-                <td>{{ele.name}}</td>
-                <td>{{ele.email}}</td>
-                <td>{{ele.age}}</td>
-                <td>{{ele.city}}</td>
-                <td><button class="btn btn-primary"  (click)="onClick(ele)">view detail</button></td>
-            </tr>
-                    
+
+            <ng-container *ngFor="let ele of users">
+                <tr *ngIf="ele.name.toLowerCase().indexOf(searchText.toLowerCase()) !== -1">
+                    <td>{{ele.id}}</td>
+                    <td>{{ele.name | lowercase }}</td>
+                    <td>{{ele.email}}</td>
+                    <td>{{ele.age}}</td>
+                    <td>{{ele.city}}</td>
+                    <td><div class="text-center"><button class="btn btn-primary" (click)="onClick(ele)"> detail</button></div></td>
+                </tr>
+
+            </ng-container>
         </tbody>
     </table>
-    </div>
+</div>

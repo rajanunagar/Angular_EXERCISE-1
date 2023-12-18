@@ -39,6 +39,7 @@ export class UserComponent {
 
   @ViewChild('registrationForm') form !: NgForm;
   onformSubmitted() {
+    console.log(this.form);
     console.log(this.form.value.userid);
     console.log(this.form.value.name);
     console.log(this.form.value.age);
