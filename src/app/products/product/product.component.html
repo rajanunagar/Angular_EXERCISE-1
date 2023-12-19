@@ -6,7 +6,7 @@
     <div class="container my-3">
       <div class="row justify-content-between">
         <div class="col-md-4 ">
-          <label class="form-label">User-id </label>
+          <label class="form-label">Product-id </label>
           <input type="number" class="form-control" name="productid" ngModel required #inputid="ngModel">
           <small *ngIf="inputid.invalid && inputid.touched">*Product-id is a required field</small>
         </div>
@@ -14,7 +14,7 @@
         <div class="col-md-4">
           <label class="form-label">Name</label>
           <input type="text" class="form-control" name="name" ngModel required #inputname="ngModel">
-          <small *ngIf="inputname.invalid && inputname.touched">*User-Name is a required field</small>
+          <small *ngIf="inputname.invalid && inputname.touched">*Name is a required field</small>
         </div>
 
         <div class="col-md-4 ">

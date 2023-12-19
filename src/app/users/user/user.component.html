@@ -15,7 +15,7 @@
         <div class="col-md-4">
           <label  class="form-label">Name</label>
           <input type="text" class="form-control"   name="name" ngModel required #inputname="ngModel">
-          <small  *ngIf="inputname.invalid && inputname.touched">*Name is a required field</small>
+          <small  *ngIf="inputname.invalid && inputname.touched ">*Name is a required field</small>
         </div>
         
         <div class="col-md-4 ">
@@ -27,7 +27,8 @@
         <div class="col-md-8">
           <label  class="form-label">Email</label>
           <input type="email" class="form-control"   name="email" ngModel required email #inputemail="ngModel">
-          <small  *ngIf="inputemail.invalid && inputemail.touched">*User-Email is a required field</small>
+          <small  *ngIf="inputemail.touched && inputemail.errors && inputemail.errors['required'] ">*User-Email is a required field</small>
+          <small  *ngIf="inputemail.touched && inputemail.errors && inputemail.errors['email']">*Enter a valid email address</small>
       </div>
       <div class="col-md-4">
           <label  class="form-label">city</label>
