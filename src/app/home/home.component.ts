@@ -20,4 +20,20 @@ export class HomeComponent {
       this.router.navigate(['products']);
     }
   }
+
+  obj=[{
+    name:"users",
+    src:" ../../assets/img/user.svg"
+  },
+  {
+    name:'cities',
+    src:'../../assets/img/city.svg'
+  },
+  {
+    name:'products',
+    src:'../../assets/img/product.svg'
+  }
+
+
+]
 }

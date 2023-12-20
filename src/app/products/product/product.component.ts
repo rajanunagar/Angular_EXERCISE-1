@@ -13,7 +13,9 @@ import { ProductService } from 'src/app/service/product.service';
 export class ProductComponent {
 
   productId?:number;
-  productData?:Product;
+  productData?:Product; 
+  regex = /[a-zA-Z]/g;  
+  nameInvalid=true;
   constructor(
     private route: ActivatedRoute,
     private productService: ProductService // Your user service

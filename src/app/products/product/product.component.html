@@ -8,15 +8,19 @@
         <div class="col-md-4 ">
           <label class="form-label">Product-id </label>
           <input type="number" class="form-control" name="productid" ngModel required #inputid="ngModel">
-          <small *ngIf="inputid.invalid && inputid.touched">*Product-id is a required field</small>
+          <small *ngIf="inputid.invalid">*Product-id is a required field</small>
         </div>
 
         <div class="col-md-4">
           <label class="form-label">Name</label>
-          <input type="text" class="form-control" name="name" ngModel required #inputname="ngModel">
-          <small *ngIf="inputname.invalid && inputname.touched">*Name is a required field</small>
+          <input type="text" class="form-control" name="name"ngModel required #inputname="ngModel"  >
+          <small *ngIf="inputname.invalid && inputname.touched;  else name"  >*Name is a required field </small>
+          <ng-template #name>
+            <small *ngIf="inputname?.value?.match(regex)?.length<2 " >  *Enter valid names</small>
+          </ng-template>
+        
         </div>
-
+      
         <div class="col-md-4 ">
           <label class="form-label">Price</label>
           <input type="number" class="form-control" name="price" ngModel required #inputprice="ngModel">
@@ -25,7 +29,10 @@
         <div class="col-md-6">
           <label class="form-label">Category</label>
           <input type="text" class="form-control" name="category" ngModel required #inputcategory="ngModel">
-          <small *ngIf="inputcategory.invalid && inputcategory.touched">*Categoryis a required field</small>
+          <small *ngIf="inputcategory.invalid && inputcategory.touched;else category">*Categoryis a required field</small>
+          <ng-template #category>
+            <small *ngIf="inputcategory?.value?.match(regex)?.length<2 " >*Enter valid category</small>
+          </ng-template>
         </div>
         <div class="col-md-6">
           <label class="form-label">Stock</label>
